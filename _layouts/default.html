@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    {% assign page_title = page.title %}
+    {% if page.url != '/' %}
+    {% assign page_title = page_title | append: ' – Monastic' %}
+    {% endif %}
+
+    <title>{{ page_title }}</title>
+
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            background-color: #241E14;
+
+            font-family: athelas, georgia, serif;
+
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        main {
+            padding: 8rem 4rem;
+        }
+
+        h1 {
+            font-size: 6rem;
+
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 1.5rem;
+
+            max-width: 20em;
+        }
+
+        .subtitle {
+            font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+            font-size: 1rem;
+
+            color: rgba(255, 255, 255, 0.7);
+
+            text-transform: uppercase;
+            letter-spacing: 1.25px;
+
+            margin-top: 0.25rem;
+            margin-bottom: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        {{ content }}
+    </main>
+
+</body>
+</html>
