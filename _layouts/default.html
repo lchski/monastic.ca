@@ -27,17 +27,21 @@
         }
 
         main {
-            padding: 8rem 4rem;
+            padding: 2rem 1rem;
         }
 
         h1 {
-            font-size: 6rem;
+            font-size: 3rem;
 
             margin-bottom: 0;
         }
 
-        p {
+        .intro {
             font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.25rem;
 
             max-width: 20em;
         }
@@ -55,10 +59,28 @@
             margin-bottom: 4rem;
         }
 
+        ol {
+            padding-left: 1rem;
+        }
+
         ol li {
-            margin-top: 0.5rem;
+            margin-top: 1rem;
 
             max-width: 25em;
+
+            padding-left: 0.25rem;
+
+            line-height: 1.3;
+        }
+
+        @media (min-width: 30em) {
+            main {
+                padding: 8rem 4rem;
+            }
+
+            h1 {
+                font-size: 6rem;
+            }
         }
     </style>
 </head>
